@@ -11,7 +11,7 @@ class registerRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
@@ -28,7 +28,6 @@ class registerRequest extends FormRequest
             'email'=>'required|email|unique:users,email',
             'phone_number'=> ['required','unique:users,phone_number','numeric' ,'digits:11', 'regex:/^09|011[0-9]*$/'],
             'password' => 'required|string|min:8|confirmed'
-
         ];
     }
 }
