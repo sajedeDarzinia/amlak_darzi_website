@@ -13,8 +13,7 @@ class estate extends Model
         'name',
         'description',
         'img',
-        'category_id',
-        'bargain_id',
+        'phone_number',
         'properties',
         'status'
     ];

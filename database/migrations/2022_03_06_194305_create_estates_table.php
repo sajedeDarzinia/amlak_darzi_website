@@ -18,10 +18,20 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('img');
-            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('bargain_id')->constrained()->cascadeOnDelete();
+            $table->string('phone_number');
             $table->string('properties');
+            $table->float('area');
+            $table->string('price');
+            $table->integer('bed_count');
             $table->boolean('status')->default(1);
+            $table->boolean('commercial')->default(0);
+            $table->boolean('residential')->default(0);
+            $table->boolean('agricultural')->default(0);
+            $table->boolean('residential_commercial')->default(0);
+            $table->boolean('store')->default(0);
+            $table->boolean('passage')->default(0);
+            $table->boolean('villa')->default(0);
+            $table->boolean('apartment')->default(0);
             $table->timestamps();
         });
     }
