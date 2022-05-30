@@ -30,13 +30,13 @@
             <div class="overlay-panel overlay-left">
                 <h1>حساب کاربری دارید؟</h1>
                 <p>اگر قبلا در ثبت نام کرده اید می توانید با وارد کردن اطلاعات حساب خود وارد شوید.</p>
-                <a class="ghost" id="signIn" href="/login">ورود</a>
+                <button class="ghost" ><a id="signIn" href="/login">ورود</a></button>
             </div>
             {{--            sign_up_button--}}
             <div class="overlay-panel overlay-right">
                 <h1>کاربر جدید هستید؟</h1>
                 <p>ابتدا باید ثبت نام کنید.</p>
-                <a class="ghost" id="signUp" href="/register">ثبت نام</a>
+                <button class="ghost" ><a id="signUp" href="/register">ثبت نام</a></button>
             </div>
         </div>
     </div>
