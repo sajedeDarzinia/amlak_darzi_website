@@ -8,7 +8,7 @@
             <h1>ثبت نام کنید</h1>
             <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="{{route('auth.google')}}" class="social"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <span>یا با ایمیل خود ثبت نام کنبد</span>
